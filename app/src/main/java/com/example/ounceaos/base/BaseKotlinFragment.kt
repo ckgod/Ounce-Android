@@ -21,7 +21,6 @@ import com.example.ounceaos.R
 abstract class BaseKotlinFragment<T : ViewDataBinding> : Fragment() {
     var progress: ProgressDialog? = null
 
-    //    lateinit var binding: T
     var databinding: T? = null
     lateinit var binding: T
 
@@ -74,65 +73,6 @@ abstract class BaseKotlinFragment<T : ViewDataBinding> : Fragment() {
 //        (requireActivity() as? MainActivity)?.setBottomNavVisible(showBottomSheetFlag)
         reLoadUI()
         return binding.root
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-//        binding = databinding!!
-//        databinding = null
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-    }
-
-    fun hideKeyboard(view: View) {
-        val inputManager =
-            context?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        inputManager.hideSoftInputFromWindow(view.windowToken, 0)
-    }
-
-//    @Suppress("DEPRECATION")
-//    fun setStatusBar(window: Window, view: View, context: Context) {
-//        // status bar 투명하게 하기
-//        view.setPadding(0, ViewUtils.getStatusBarHeight(context), 0, 0)
-//        window.decorView.systemUiVisibility =
-//            View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-//        window.statusBarColor = Color.TRANSPARENT
-//    }
-
-    abstract inner class OnSingleClickListener : View.OnClickListener {
-        //마지막으로 클릭한 시간
-        private var mLastClickTime: Long = 0
-
-        //중복클릭시간차이
-        private val MIN_CLICK_INTERVAL: Long = 1000
-
-        abstract fun onSingleClick(v: View)
-
-        override fun onClick(v: View) {
-            //현재 클릭한 시간
-            val currentClickTime = SystemClock.uptimeMillis()
-            //이전에 클릭한 시간과 현재시간의 차이
-            val elapsedTime = currentClickTime - mLastClickTime
-            //마지막클릭시간 업데이트
-            mLastClickTime = currentClickTime
-
-            //내가 정한 중복클릭시간 차이를 안넘었으면 클릭이벤트 발생못하게 return
-            if (elapsedTime <= MIN_CLICK_INTERVAL)
-                return
-            //중복클릭시간 아니면 이벤트 발생
-            onSingleClick(v)
-        }
-    }
-
-    fun interceptBackPressed(): Boolean {
-        findNavController().popBackStack()
-        return true
-    }
-
-    fun backStep() {
-        findNavController().popBackStack()
     }
 
     fun showCustomToast(message: String) {
