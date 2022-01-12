@@ -1,21 +1,14 @@
 package com.example.ounceaos.base
 
 import android.app.ProgressDialog
-import android.content.Context
-import android.graphics.Color
 import android.os.Bundle
-import android.os.SystemClock
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.Window
-import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.example.ounceaos.MainActivity
 import com.example.ounceaos.R
 
 abstract class BaseKotlinFragment<T : ViewDataBinding> : Fragment() {
