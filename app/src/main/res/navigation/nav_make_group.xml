@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/make_group"
+    app:startDestination="@id/makeGroupFragment">
+
+    <fragment
+        android:id="@+id/makeGroupFragment"
+        android:name="com.example.ounceaos.ui.fragment.MakeGroupFragment"
+        android:label="MakeGroupFragment"
+        tools:layout="@layout/fragment_make_group"/>
+</navigation>
