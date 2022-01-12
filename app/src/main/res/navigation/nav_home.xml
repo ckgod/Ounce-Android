@@ -9,5 +9,7 @@
         android:id="@+id/homeFragment"
         android:name="com.example.ounceaos.ui.fragment.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home"/>
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
 </navigation>
