@@ -5,4 +5,9 @@
     <string name="complete">완료</string>
     <string name="continued">다음</string>
     <string name="cancel">취소</string>
+    <string name="menu_home">home</string>
+    <string name="menu_feed">feed</string>
+    <string name="menu_make_group">group</string>
+    <string name="menu_ranking">ranking</string>
+    <string name="menu_profile">profile</string>
 </resources>
