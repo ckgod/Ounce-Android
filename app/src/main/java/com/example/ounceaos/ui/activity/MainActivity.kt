@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             binding.bottomNav.selectedItemId = R.id.home
+            binding.bottomNav.itemIconTintList = null
             setupBottomNavigationBar()
         } // Else, need to wait for onRestoreInstanceState
     }

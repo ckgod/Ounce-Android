@@ -19,11 +19,14 @@
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
-            android:layout_width="match_parent"
+            android:layout_width="260dp"
             android:layout_height="55dp"
             android:clipToPadding="true"
-            android:background="@color/colorBlack"
-            app:itemIconTint="@drawable/menu_color"
+            android:background="@drawable/rounded_bottom_nav_shape"
+            android:elevation="8dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginHorizontal="50dp"
+            app:itemIconTint="@color/colorNull"
             app:labelVisibilityMode="unlabeled"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

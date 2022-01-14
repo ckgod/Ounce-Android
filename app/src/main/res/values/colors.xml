@@ -30,4 +30,7 @@
     <color name="colorDanger">#BD4444</color>
     <color name="colorMedium">#e07037</color>
 
+    <!-- ounce -->
+    <color name="ounceColor">#D6FF66</color>
+
 </resources>
