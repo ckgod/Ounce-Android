@@ -19,13 +19,15 @@
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
-            android:layout_width="260dp"
+            android:layout_width="0dp"
             android:layout_height="55dp"
+            app:itemRippleColor="@color/colorNull"
             android:clipToPadding="true"
             android:background="@drawable/rounded_bottom_nav_shape"
             android:elevation="8dp"
             android:layout_marginBottom="30dp"
-            android:layout_marginHorizontal="50dp"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:itemIconTint="@color/colorNull"
             app:labelVisibilityMode="unlabeled"
             app:layout_constraintStart_toStartOf="parent"
