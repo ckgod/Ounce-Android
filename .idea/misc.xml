@@ -13,9 +13,11 @@
         <entry key="app/src/main/res/drawable/ic_icon_ounce_48px.xml" value="0.214" />
         <entry key="app/src/main/res/drawable/ic_icon_ounce_filled_48px.xml" value="0.214" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.214" />
+        <entry key="app/src/main/res/drawable/ic_splash_bottom_logo.xml" value="0.162" />
         <entry key="app/src/main/res/drawable/ic_splash_logo.xml" value="0.214" />
         <entry key="app/src/main/res/drawable/rounded_bottom_nav_shape.xml" value="0.214" />
         <entry key="app/src/main/res/drawable/selector_menu_feed.xml" value="0.214" />
+        <entry key="app/src/main/res/drawable/splash_layout.xml" value="0.162" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.39685363769531246" />
         <entry key="app/src/main/res/layout/activity_tmp.xml" value="0.31567028985507245" />
         <entry key="app/src/main/res/layout/custom_loading.xml" value="0.31567028985507245" />

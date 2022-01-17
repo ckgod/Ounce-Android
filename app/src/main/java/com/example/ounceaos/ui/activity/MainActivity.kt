@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.S)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_OunceAos)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
